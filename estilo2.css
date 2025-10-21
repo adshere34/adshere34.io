@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Oxygen", sans-serif;
+}
+:root{
+    --color1:#F2F2F2;
+    --color2:#334960;
+    --color3:#99A4B0;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color1);
+}
+#contenedor{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+header h1{
+    font-style: italic;
+    flex-direction: row;
+    align-items: center;
+    padding: 30px;
+    font-size: 4.5em;
+}
+#imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#imagen img {
+  max-width: 70%;
+  display: block;
+  margin: 50px;
+}
+.parrafo h4{
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.parrafo p {
+  padding: 20px;
+  display: block;
+  max-width: 80%;
+  margin: 0 auto 20px;
+  text-align: left;
+  line-height: 1.5;
+}
+.parrafo img {
+  max-width: 40%;
+  float: right;
+  margin: 10px;
+}
+
+
+#menu, #redes{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;  
+    padding: 30px;
+}
+#menu li a{
+    text-decoration: none;
+    padding:10px;
+    font-size: 1em;
+    color: blue;
+}
+#redes li a{
+    text-decoration: none;
+    padding:10px;
+    font-size: 1em;
+    background-color: black;
+    color: var(--color1);
+    border-radius: 40px;
+}
+#menu li a:hover, #redes li a:hover, header h1:hover{
+    color:var(--color3)
+}
+footer p{
+  display: flex;
+  text-align: left;
+}
